@@ -1,0 +1,23 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.nosotros {
+    margin-top: 5rem;
+
+    &__heading {
+        text-align: center;
+        color: v.$secundario;
+    }
+
+    &__grid {
+        @include m.tablet {
+            @include m.grid(2, 2rem);
+            align-items: center;
+        }
+    }
+
+    &__texto {
+        color: v.$secundario;
+        line-height: 2;
+    }
+}
